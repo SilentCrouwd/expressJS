@@ -14,7 +14,8 @@ app.use("/api", router);
 app.get("/", (req, res) => {
   res.status(201).json("Hallo World");
 });
+const port = process.env || "3000";
 
-app.listen("3000", () => {
-  console.log(`Example app listening on port `);
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
 });

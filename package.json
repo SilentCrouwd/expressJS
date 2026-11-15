@@ -5,6 +5,8 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
+    "build:prod": "npm i && npx tsc",
+    "start:prod": "node dist/index.js",
     "start": "npx tsc && cp -r ./public/ ./dist/public/  && npx tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -2,7 +2,7 @@ import express from "express";
 import router from "./routes/router.js";
 const app = express();
 import path from "path";
-// wichtig für POST
+// wichtig für POST funktion
 
 const __dirname = import.meta.dirname;
 

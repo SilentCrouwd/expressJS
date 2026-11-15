@@ -32,10 +32,10 @@ userRouter.get("/:id/comments", (req, res) => {
 });
 
 userRouter.post("/", (req, res) => {
-  const name = req.body.name;
+  const user = req.body;
 
   try {
-    const newUser = postUser(name);
+    const newUser = postUser(user);
 
     res.header("Location", `/api/user/${newUser.id}`);
     res.status(201).json({ user: newUser });

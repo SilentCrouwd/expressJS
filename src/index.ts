@@ -7,7 +7,7 @@ import path from "path";
 const __dirname = import.meta.dirname;
 
 app.use(express.json());
-console.log(__dirname);
+// console.log(__dirname);
 // Statisch bereitstellen
 app.use("/static", express.static(path.join(__dirname, "../public")));
 app.use("/api", router);
